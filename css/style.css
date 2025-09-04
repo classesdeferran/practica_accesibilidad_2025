@@ -71,40 +71,100 @@ h1 {
     font-family: "Marcellus", cursive;
   }
 
-  p,
   div {
-    padding: 1rem;
-    font-size: 1.5rem;
+    padding: 1rem
     
+  }
+}
+
+section {
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  ol {
+    margin-left: 1rem;
+  }
+
+  a {
+    display: block;
+    text-align: right;
   }
 }
 
 .contacto {
   background-color: maroon;
   color: white;
+  padding: 1rem 0;
 
   input {
     font-size: 1.5rem;
   }
-}
 
-.boton {
-  margin-top: 1rem;
-  padding: 5px 20px;
-  text-align: left;
-  border: 1px solid darksalmon;
-  background-color: darksalmon;
-  display: inline-block;
-  border-radius: 5%;
+  h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-family: "Marcellus", cursive;
+    text-align: center;
+  }
 
-  &:hover {
-    background-color: salmon;
-    color: bisque;
+  fieldset {
+    padding: 1rem;
+  }
+
+  label {
+
+  display: block;
+  margin-bottom: 1rem;
+
+  }
+
+  p {
+    margin-bottom: 1rem;
   }
 }
 
+.radio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    margin-top: 1rem;
+  padding: 5px 20px;
+  text-align: left;
+  display: inline-block;
+  border-radius: 5%;
+  }
+
+  button[type="submit"] {
+     border: 1px solid rgb(122, 233, 131);
+  background-color: rgb(122, 233, 131);
+  color: black;
+
+  }
+
+  button[type="reset"] {
+     border: 1px solid salmon;
+  background-color: salmon;
+  color: black;
+
+  }
+}
+
+
+
 input:focus {
-  outline : 4px solid #125b12;
+  /* outline : 4px solid #125b12; */
+  outline : 4px solid black;
 }
 
 .final {
@@ -150,6 +210,7 @@ input:focus {
 
 #errorNombre, #errorApellido {
   height: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 #nosotros {

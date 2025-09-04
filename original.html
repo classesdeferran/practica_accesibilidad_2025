@@ -6,12 +6,13 @@
     <title>Hotel Mas dels Avets</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
   </head>
   <body>
-    <div id="skip-link" tabindex="0" >
-      <a  href="#habitaciones">Ir al contenido principal</a>
+    <div id="skip-link" tabindex="0">
+      <a href="#habitaciones">Ir al contenido principal</a>
     </div>
-    <nav class="barra" aria-label="menú de navegación">
+    <nav class="barra" aria-label="menú de navegación" id="menu">
       <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#habitaciones">Habitaciones</a></li>
@@ -45,6 +46,9 @@
             <li>Aire Acondicionado.</li>
             <li>Caja de seguridad.</li>
           </ol>
+          <div>
+            <a href="#menu">Volver al menú</a>
+          </div>
         </div>
       </section>
       <section class="detalles container">
@@ -54,6 +58,9 @@
           <p>Ofrecemos menús diarios con productos de temporada.</p>
           <p>Le recomendamos consulte nuestra excelente carta de vinos.</p>
           <p>Elaboramos postres artesanos diariamente.</p>
+          <div>
+            <a href="#menu">Volver al menú</a>
+          </div>
         </div>
       </section>
       <section class="contacto" id="contacto">
@@ -63,10 +70,10 @@
             <!-- <fieldset> -->
             <fieldset>
               <legend>Datos Personales</legend>
-              <label>Nombre : <input type="text" placeholder="Nombre" /></label>
+              <label>Nombre : <input id="nombre" type="text" placeholder="Nombre" required aria-required="true"/></label>
               <p id="errorNombre"></p>
               <label
-                >Apellido : <input type="text" placeholder="Apellido"
+                >Apellido : <input type="text" placeholder="Apellido" required aria-required="true"
               /></label>
               <p id="errorApellido"></p>
             </fieldset>
@@ -75,23 +82,26 @@
 
               <label>Fecha entrada : <input type="date" /></label>
               <label>Fecha salida : <input type="date" /></label>
-              <label>
-                Sólo Alojamiento
-                <input
-                  type="radio"
-                  name="estancia"
-                  value="alojamiento"
-                  checked
-                />
-              </label>
-              <label>
-                Desayuno incluido<input
-                  type="radio"
-                  name="estancia"
-                  value="desayuno"
-                />
-              </label>
-              <button class="boton">Enviar</button>
+              <div class="radio">
+                <label>
+                  Sólo Alojamiento
+                  <input
+                    type="radio"
+                    name="estancia"
+                    value="alojamiento"
+                    checked
+                  />
+                </label>
+                <label>
+                  Desayuno incluido
+                  <input type="radio" name="estancia" value="desayuno" />
+                </label>
+              </div>
+
+              <div class="botones">
+                <button type="submit" class="boton">Enviar</button>
+                <button type="reset">Borrar</button>
+              </div>
             </fieldset>
             <!-- </fieldset> -->
           </form>

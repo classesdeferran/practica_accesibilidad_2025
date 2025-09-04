@@ -27,6 +27,8 @@ Lista de los elementos a revisar:
 8) ¿Las imágenes tienen la descripción necesaria?
 
 9) ¿Las etiquetas que dan información por texto al usuario son claramente explicativas?
-    Ejemplo: decir que tipo de menú es -> aria-label
+    Ejemplo: decir que tipo de menú es -> aria-label, aria-describedby, aria-required
+
+10) Revisa el formulario: label, atributos, validaciones.
 
 
