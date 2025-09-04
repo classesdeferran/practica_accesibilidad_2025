@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Marcellus&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", Arial, Helvetica, sans-serif;
+  
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-around;
+  background-color: maroon;
+  /* color: gray; */
+  padding: 5px;
+  /* position: fixed;
+  width: 100%;
+  top:0; */
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+  }
+}
+
+.barra a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  font-size: 28px;
+  
+}
+
+.barra a:hover {
+  background-color: darkgreen;
+}
+.container {
+  margin: 1rem auto;
+  max-width: 1200px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 3rem 0;
+  font-family: "Marcellus", cursive;
+}
+
+.foto-ppal img {
+  width: 100%;
+}
+
+.detalles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+
+  h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #a36311;
+    margin-bottom: 2rem;
+    font-family: "Marcellus", cursive;
+  }
+
+  p,
+  div {
+    padding: 1rem;
+    font-size: 1.5rem;
+    
+  }
+}
+
+.contacto {
+  background-color: maroon;
+  color: white;
+
+  input {
+    font-size: 1.5rem;
+  }
+}
+
+.boton {
+  margin-top: 1rem;
+  padding: 5px 20px;
+  text-align: left;
+  border: 1px solid darksalmon;
+  background-color: darksalmon;
+  display: inline-block;
+  border-radius: 5%;
+
+  &:hover {
+    background-color: salmon;
+    color: bisque;
+  }
+}
+
+input:focus {
+  outline : 4px solid #125b12;
+}
+
+.final {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #125b12;
+  padding: 2rem 5%;
+  color: beige;
+}
+
+#nosotros {
+  font-size: 1.2rem;
+
+  a {
+    font-size: inherit;
+    /* text-decoration: none; */
+    color:beige;
+  }
+}
+
+#app {
+  font-size: 1.2rem;
+  text-align: center;
+  img {
+    width: 40%;
+  }
+}
+
+#siguenos {
+  font-size: 1.2rem;
+  text-align: center;
+
+
+  div {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  img {
+    width: 30%;
+  }
+}
+
+#errorNombre, #errorApellido {
+  height: 1rem;
+}
+
+#nosotros {
+  a {
+    margin: 1.5rem 0;
+    display: block;
+  }
+}
+
+/* El enlace está oculto */
+#skip-link {
+  position: absolute;
+  left: -100000px;
+  top: auto;
+  /* width: 1px;
+  height: 1px; */
+  overflow: hidden;
+
+}
+/* El enlace ha recibido el foco y está visible */
+#skip-link:focus {
+  position: static;
+  margin:.5rem;
+  display: inline-block;
+  width: auto;
+  padding: .5rem;
+  height: 2rem;
+  overflow: visible;
+  outline: 3px solid maroon;
+}

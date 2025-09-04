@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Mas dels Avets</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="skip-link" tabindex="0" >
+      <a  href="#habitaciones">Ir al contenido principal</a>
+    </div>
+    <nav class="barra" aria-label="menú de navegación">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#restaurante">Restaurante</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1 tabindex="0">Hotel Mas dels Avets</h1>
+      <div class="foto-ppal container">
+        <img
+          tabindex="0"
+          src="img/hotel.jpg"
+          alt="El hotel cuenta con piscina y amplia zona de baño."
+        />
+      </div>
+    </header>
+
+    <main>
+      <section class="detalles container" tabindex="0">
+        <img
+          src="img/dormitori.avif"
+          alt="Imagen de habitación doble con cama extra grande."
+        />
+        <div id="habitaciones">
+          <h2>Nuestras habitaciones.</h2>
+          <p>Todas nuestras habitaciones disponen de:</p>
+          <ol>
+            <li>Baño privado.</li>
+            <li>TV conectada a satélite.</li>
+            <li>Aire Acondicionado.</li>
+            <li>Caja de seguridad.</li>
+          </ol>
+        </div>
+      </section>
+      <section class="detalles container">
+        <img src="img/menjador.avif" alt="Imagen del comedor." />
+        <div id="restaurante">
+          <h2>El Restaurante</h2>
+          <p>Ofrecemos menús diarios con productos de temporada.</p>
+          <p>Le recomendamos consulte nuestra excelente carta de vinos.</p>
+          <p>Elaboramos postres artesanos diariamente.</p>
+        </div>
+      </section>
+      <section class="contacto" id="contacto">
+        <h2>Contacte con nosotros</h2>
+        <div>
+          <form class="detalles container" name="formReserva">
+            <!-- <fieldset> -->
+            <fieldset>
+              <legend>Datos Personales</legend>
+              <label>Nombre : <input type="text" placeholder="Nombre" /></label>
+              <p id="errorNombre"></p>
+              <label
+                >Apellido : <input type="text" placeholder="Apellido"
+              /></label>
+              <p id="errorApellido"></p>
+            </fieldset>
+            <fieldset>
+              <legend>Datos de la reserva</legend>
+
+              <label>Fecha entrada : <input type="date" /></label>
+              <label>Fecha salida : <input type="date" /></label>
+              <label>
+                Sólo Alojamiento
+                <input
+                  type="radio"
+                  name="estancia"
+                  value="alojamiento"
+                  checked
+                />
+              </label>
+              <label>
+                Desayuno incluido<input
+                  type="radio"
+                  name="estancia"
+                  value="desayuno"
+                />
+              </label>
+              <button class="boton">Enviar</button>
+            </fieldset>
+            <!-- </fieldset> -->
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="final">
+      <div id="nosotros">
+        <h2 class="h2-footer">SOBRE NOSOTROS</h2>
+        <div>
+          <a href="#">¿Quiénes somos?</a>
+          <a href="#">Blog Hoteles Rurales</a>
+          <a href="#">Condiciones legales</a>
+          <a href="#">Política de cookies</a>
+        </div>
+      </div>
+      <div id="app">
+        <h2 class="h2-footer">DESCARGA LA APP</h2>
+        <div>
+          <p>
+            <a href="#" aria-label="Enlace a Google Play"
+              ><img src="img/google-play2.png" alt=""
+            /></a>
+          </p>
+          <p>
+            <a href="#" aria-label="Enlace a la Apple Store"
+              ><img src="img/apple-store2.png" alt=""
+            /></a>
+          </p>
+        </div>
+      </div>
+      <div id="siguenos">
+        <h2 class="h2-footer">SÍGUENOS</h2>
+
+        <div>
+          <p>
+            <a href="https://facebook.com" aria-label="Enlace a Facebook"
+              ><img src="img/png-transparent-facebook.png" alt=""
+            /></a>
+          </p>
+          <p>
+            <a href="#" aria-label="Enlace a Twitter"
+              ><img src="img/png-transparent-twitter.png" alt=""
+            /></a>
+          </p>
+          <p>
+            <a href="#" aria-label="Enlace a Instagram"
+              ><img src="img/png-transparent-instagram.png" alt=""
+            /></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

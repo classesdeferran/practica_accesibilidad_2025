@@ -1,0 +1,32 @@
+ARIA :
+Accessible
+Rich
+Internet
+Applications
+
+Roles
+Estados
+Propiedades
+
+Lista de los elementos a revisar:
+
+1) Atributo lang en la etiqueta html.
+
+2) Etiqueta <meta charset="UTF-8" />.
+
+3) Etiqueta <title> en <head>
+
+4) Favicon.
+
+5) Etiquetas semánticas: header, nav, main, ul, button, label, ...
+
+6) ¿Las tipografías son claramente legibles?
+
+7) ¿El contraste es suficientemente bueno?
+
+8) ¿Las imágenes tienen la descripción necesaria?
+
+9) ¿Las etiquetas que dan información por texto al usuario son claramente explicativas?
+    Ejemplo: decir que tipo de menú es -> aria-label
+
+
